@@ -14,6 +14,9 @@
 		7A4BD81F1F0D324200AC3F41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A4BD81D1F0D324200AC3F41 /* LaunchScreen.storyboard */; };
 		7A4BD82A1F0D324200AC3F41 /* Maranville_KeyboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4BD8291F0D324200AC3F41 /* Maranville_KeyboardTests.swift */; };
 		7A4BD8351F0D324200AC3F41 /* Maranville_KeyboardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4BD8341F0D324200AC3F41 /* Maranville_KeyboardUITests.swift */; };
+		7A4BD8491F0D330C00AC3F41 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4BD8481F0D330C00AC3F41 /* KeyboardViewController.swift */; };
+		7A4BD84D1F0D330C00AC3F41 /* KittenBoard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7A4BD8461F0D330C00AC3F41 /* KittenBoard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7A4BD8531F0D365100AC3F41 /* kitten.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A4BD8521F0D365000AC3F41 /* kitten.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +34,28 @@
 			remoteGlobalIDString = 7A4BD8101F0D324200AC3F41;
 			remoteInfo = "Maranville Keyboard";
 		};
+		7A4BD84B1F0D330C00AC3F41 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7A4BD8091F0D324200AC3F41 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7A4BD8451F0D330C00AC3F41;
+			remoteInfo = KittenBoard;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7A4BD8511F0D330C00AC3F41 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7A4BD84D1F0D330C00AC3F41 /* KittenBoard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		7A4BD8111F0D324200AC3F41 /* Maranville Keyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Maranville Keyboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +71,10 @@
 		7A4BD8301F0D324200AC3F41 /* Maranville KeyboardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Maranville KeyboardUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A4BD8341F0D324200AC3F41 /* Maranville_KeyboardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Maranville_KeyboardUITests.swift; sourceTree = "<group>"; };
 		7A4BD8361F0D324200AC3F41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A4BD8461F0D330C00AC3F41 /* KittenBoard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = KittenBoard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A4BD8481F0D330C00AC3F41 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		7A4BD84A1F0D330C00AC3F41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A4BD8521F0D365000AC3F41 /* kitten.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kitten.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +99,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7A4BD8431F0D330C00AC3F41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -80,6 +115,7 @@
 				7A4BD8131F0D324200AC3F41 /* Maranville Keyboard */,
 				7A4BD8281F0D324200AC3F41 /* Maranville KeyboardTests */,
 				7A4BD8331F0D324200AC3F41 /* Maranville KeyboardUITests */,
+				7A4BD8471F0D330C00AC3F41 /* KittenBoard */,
 				7A4BD8121F0D324200AC3F41 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +126,7 @@
 				7A4BD8111F0D324200AC3F41 /* Maranville Keyboard.app */,
 				7A4BD8251F0D324200AC3F41 /* Maranville KeyboardTests.xctest */,
 				7A4BD8301F0D324200AC3F41 /* Maranville KeyboardUITests.xctest */,
+				7A4BD8461F0D330C00AC3F41 /* KittenBoard.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,6 +162,16 @@
 			path = "Maranville KeyboardUITests";
 			sourceTree = "<group>";
 		};
+		7A4BD8471F0D330C00AC3F41 /* KittenBoard */ = {
+			isa = PBXGroup;
+			children = (
+				7A4BD8481F0D330C00AC3F41 /* KeyboardViewController.swift */,
+				7A4BD8521F0D365000AC3F41 /* kitten.png */,
+				7A4BD84A1F0D330C00AC3F41 /* Info.plist */,
+			);
+			path = KittenBoard;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,10 +182,12 @@
 				7A4BD80D1F0D324200AC3F41 /* Sources */,
 				7A4BD80E1F0D324200AC3F41 /* Frameworks */,
 				7A4BD80F1F0D324200AC3F41 /* Resources */,
+				7A4BD8511F0D330C00AC3F41 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				7A4BD84C1F0D330C00AC3F41 /* PBXTargetDependency */,
 			);
 			name = "Maranville Keyboard";
 			productName = "Maranville Keyboard";
@@ -181,6 +230,23 @@
 			productReference = 7A4BD8301F0D324200AC3F41 /* Maranville KeyboardUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		7A4BD8451F0D330C00AC3F41 /* KittenBoard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A4BD84E1F0D330C00AC3F41 /* Build configuration list for PBXNativeTarget "KittenBoard" */;
+			buildPhases = (
+				7A4BD8421F0D330C00AC3F41 /* Sources */,
+				7A4BD8431F0D330C00AC3F41 /* Frameworks */,
+				7A4BD8441F0D330C00AC3F41 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KittenBoard;
+			productName = KittenBoard;
+			productReference = 7A4BD8461F0D330C00AC3F41 /* KittenBoard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -208,6 +274,11 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 7A4BD8101F0D324200AC3F41;
 					};
+					7A4BD8451F0D330C00AC3F41 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = K9KEJDHY56;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 7A4BD80C1F0D324200AC3F41 /* Build configuration list for PBXProject "Maranville Keyboard" */;
@@ -226,6 +297,7 @@
 				7A4BD8101F0D324200AC3F41 /* Maranville Keyboard */,
 				7A4BD8241F0D324200AC3F41 /* Maranville KeyboardTests */,
 				7A4BD82F1F0D324200AC3F41 /* Maranville KeyboardUITests */,
+				7A4BD8451F0D330C00AC3F41 /* KittenBoard */,
 			);
 		};
 /* End PBXProject section */
@@ -252,6 +324,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A4BD8441F0D330C00AC3F41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A4BD8531F0D365100AC3F41 /* kitten.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +363,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7A4BD8421F0D330C00AC3F41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A4BD8491F0D330C00AC3F41 /* KeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -295,6 +383,11 @@
 			isa = PBXTargetDependency;
 			target = 7A4BD8101F0D324200AC3F41 /* Maranville Keyboard */;
 			targetProxy = 7A4BD8311F0D324200AC3F41 /* PBXContainerItemProxy */;
+		};
+		7A4BD84C1F0D330C00AC3F41 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7A4BD8451F0D330C00AC3F41 /* KittenBoard */;
+			targetProxy = 7A4BD84B1F0D330C00AC3F41 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -416,6 +509,7 @@
 		7A4BD83A1F0D324200AC3F41 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = K9KEJDHY56;
 				INFOPLIST_FILE = "Maranville Keyboard/Info.plist";
@@ -429,6 +523,7 @@
 		7A4BD83B1F0D324200AC3F41 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = K9KEJDHY56;
 				INFOPLIST_FILE = "Maranville Keyboard/Info.plist";
@@ -497,6 +592,32 @@
 			};
 			name = Release;
 		};
+		7A4BD84F1F0D330C00AC3F41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = K9KEJDHY56;
+				INFOPLIST_FILE = KittenBoard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Maranville.IO.Maranville-Keyboard.KittenBoard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		7A4BD8501F0D330C00AC3F41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = K9KEJDHY56;
+				INFOPLIST_FILE = KittenBoard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Maranville.IO.Maranville-Keyboard.KittenBoard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -530,6 +651,14 @@
 			buildConfigurations = (
 				7A4BD8401F0D324200AC3F41 /* Debug */,
 				7A4BD8411F0D324200AC3F41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7A4BD84E1F0D330C00AC3F41 /* Build configuration list for PBXNativeTarget "KittenBoard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A4BD84F1F0D330C00AC3F41 /* Debug */,
+				7A4BD8501F0D330C00AC3F41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

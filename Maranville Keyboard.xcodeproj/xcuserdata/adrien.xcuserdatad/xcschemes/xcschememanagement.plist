@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>KittenBoard.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>Maranville Keyboard.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -23,6 +28,11 @@
 			<true/>
 		</dict>
 		<key>7A4BD82F1F0D324200AC3F41</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7A4BD8451F0D330C00AC3F41</key>
 		<dict>
 			<key>primary</key>
 			<true/>
