@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A3A25131F0DC11300537324 /* switch-globe.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A3A25121F0DC11300537324 /* switch-globe.png */; };
 		7A4BD8151F0D324200AC3F41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4BD8141F0D324200AC3F41 /* AppDelegate.swift */; };
 		7A4BD8171F0D324200AC3F41 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4BD8161F0D324200AC3F41 /* ViewController.swift */; };
 		7A4BD81A1F0D324200AC3F41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A4BD8181F0D324200AC3F41 /* Main.storyboard */; };
@@ -58,6 +59,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7A3A25121F0DC11300537324 /* switch-globe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "switch-globe.png"; sourceTree = "<group>"; };
 		7A4BD8111F0D324200AC3F41 /* Maranville Keyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Maranville Keyboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A4BD8141F0D324200AC3F41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7A4BD8161F0D324200AC3F41 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				7A4BD8481F0D330C00AC3F41 /* KeyboardViewController.swift */,
+				7A3A25121F0DC11300537324 /* switch-globe.png */,
 				7A4BD8521F0D365000AC3F41 /* kitten.png */,
 				7A4BD84A1F0D330C00AC3F41 /* Info.plist */,
 			);
@@ -332,6 +335,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A4BD8531F0D365100AC3F41 /* kitten.png in Resources */,
+				7A3A25131F0DC11300537324 /* switch-globe.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -637,6 +641,7 @@
 				7A4BD83B1F0D324200AC3F41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7A4BD83C1F0D324200AC3F41 /* Build configuration list for PBXNativeTarget "Maranville KeyboardTests" */ = {
 			isa = XCConfigurationList;
@@ -645,6 +650,7 @@
 				7A4BD83E1F0D324200AC3F41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7A4BD83F1F0D324200AC3F41 /* Build configuration list for PBXNativeTarget "Maranville KeyboardUITests" */ = {
 			isa = XCConfigurationList;
@@ -653,6 +659,7 @@
 				7A4BD8411F0D324200AC3F41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7A4BD84E1F0D330C00AC3F41 /* Build configuration list for PBXNativeTarget "KittenBoard" */ = {
 			isa = XCConfigurationList;
@@ -661,6 +668,7 @@
 				7A4BD8501F0D330C00AC3F41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

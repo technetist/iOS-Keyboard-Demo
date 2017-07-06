@@ -26,6 +26,22 @@ class KeyboardViewController: UIInputViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //next keyboard button
+        // Perform custom UI setup here
+        self.nextKeyboardButton = UIButton(type: .system)
+        
+        self.nextKeyboardButton.setTitle(NSLocalizedString("Next Keyboard", comment: "Title for 'Next Keyboard' button"), for: [])
+        self.nextKeyboardButton.sizeToFit()
+        self.nextKeyboardButton.translatesAutoresizingMaskIntoConstraints = false
+        
+        self.nextKeyboardButton.addTarget(self, action: #selector(handleInputModeList(from:with:)), for: .allTouchEvents)
+        
+        self.view.addSubview(self.nextKeyboardButton)
+        
+        self.nextKeyboardButton.leftAnchor.constraint(equalTo: self.view.leftAnchor).isActive = true
+        self.nextKeyboardButton.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true
+        
+        //kitten button
         let btnKitten = UIButton(type: .system)
         btnKitten.frame = CGRect(x: 150, y: 40, width: 100, height: 120)
         btnKitten.setBackgroundImage(UIImage(named: "kitten.png"), for: .normal)
